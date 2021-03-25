@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+  }
+
+html, body {
+    height: 100%;
+    font-family: Arial;
+    font-size: 24px;
+  }
+
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    top: 0;
+    padding-top: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    clear: both;
+    display: block;
+
+}
+
+.header-top {
+    top: 0;
+    width: 100%;
+    position: relative;
+    clear: both;
+    display: block;
+
+    
+}
+.tel {
+    float:right;
+    color: #da511f;
+    font-size:1.3rem;
+}
+
+.logo {
+    float:left;
+    padding-bottom: 20px;
+}
+.logoimg {
+    height: 4rem;
+}
+/* горизонтальная выпадающая строка навигации */
+.navline {
+    top: 0;
+    width: 100%;
+    position: relative;
+    clear: both;
+    background-color: #231f20;
+    display:block;
+    width:100%;
+    height:auto;
+    margin:0px;
+    padding:0px;
+}
+.navline ul{
+    position:relative;
+    display:block;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    list-style:none;
+    background-color: #231f20;
+}
+.navline > ul{
+    text-align:justify;
+    font-size:0px;
+    line-height:0;
+    
+}
+
+.navline ul li{
+    position:relative;
+    display:inline-block;
+    width:auto;
+    height:auto;
+    vertical-align:top;
+    text-align:left;
+}
+.navline ul li a{
+    display:block;
+    height:auto;
+    padding:25px 35px 25px 35px;
+    font-size:0.7rem;
+    font-family:Arial, sans-serif;
+    color:#ffffef;
+    line-height:1.3em;
+    text-decoration:none;
+    font-weight:bold;
+    text-transform:uppercase;
+    box-sizing:border-box;
+    border-right: 1px solid #eb5017;
+}
+.navline ul li > a:hover, #menu1 ul li:hover > a{
+    background-color: #eb5017;
+}
+.navline ul li ul{
+    position:absolute;
+    display:none;
+    width:auto;
+    background:#EBBD5B;
+    white-space:nowrap;
+}
+
+.navline ul li:hover ul{display:block;}/*эта строчка реализует механизм выпадения*/
+.navline ul li ul li{
+    display:block;
+    width:auto;
+}
+.navline ul li ul li a{
+    display:block;
+    text-transform:none;
+    height:auto;
+    padding:10px 35px;
+    width:100%;
+    box-sizing:border-box;
+}
+.navline ul li ul li:first-child a{border-top:0px;}
+.active {
+
+background-color: #eb5017;
+}
+/* конец горизонтальной выпадающая строка навигации */
+
+.main {
+
+    background-color: #ffffff;
+    flex: 1;
+    clear: both;
+}
+
+.bread_crumbs {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 20px;
+}
+.bread_crumbs a{
+    color: black;
+
+}
+/*Калькулятор*/
+.kalc {
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    margin-left: 20px ;
+    min-width: 40%;
+    max-width: 55%;
+    min-height: 70%;
+    padding-left: 25px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #ee531d;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 0;
+}
+input {
+    width: 150px;
+    height: 1.2rem;
+    font-size: 1rem;;
+}
+.deadline {
+    width: 150px;
+    height: 1.2rem;
+    font-size: 0.9rem;;
+}
+.inputs {
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+.checkbox {
+    height: 20px;
+    width: 20px;
+}
+.slider {
+    width:400px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+
+}
+.labels {
+    text-align: right;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+.res {
+    color: #46541f;
+    margin-left: 30px;
+}
+
+.checktext {
+    padding-right: 30px;
+}
+.submit {
+    padding: 0 20px;
+    position: relative;
+    display: inline-block;
+    width:max-content;
+    height: 2.5em;
+    line-height: 2.5em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #777;
+    color: #2f5000;
+    outline: none;
+    border: 1px solid #c5c1be;
+    border-radius: 10px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #abbb90;
+    background: linear-gradient(#c2f93a, #bef360 48%, #a9f71f 52%, #81c30a)
+}
+.submit:active {
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+  }
+
+.result {
+    margin-top: 40px;
+}
+/*Калькулятор end*/
+
+/*подвал*/
+.footer {
+    background-color: #231f20;
+    clear: both;
+    padding: 0 10px;
+    margin-top: 1.5rem;
+    flex-shrink: 0;
+    height: 100px;
+
+
+}
+
+.footer a {
+    margin-left: 25px;
+}
+.footer nav {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.footer a:link, .footer a:visited {
+    color: #fffeff;
+}
+.footer a:hover {
+    color: #eb5017;
+}
+
+/*подвал end*/
